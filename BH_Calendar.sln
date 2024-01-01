@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BH_Calendar", "BH_Calendar\BH_Calendar.csproj", "{291C510D-3AF6-4FFB-9FC4-80FD124219CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Files", "0.Files", "{C2B878BC-E9B7-470F-961E-1C1780936A0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Core", "2.Core", "{3DAD225F-76EF-43AB-A310-8A97517796D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Framework", "1.Framework", "{D19229FD-C71D-40AF-87F5-92A1F5E6D65D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Data", "3.Data", "{BEABC482-B816-4A12-B2AB-FB68A0DE3102}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Execute", "4.Execute", "{BCA4015D-6D2D-4E9C-B473-1C5211523957}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BH_Calendar.Data", "BH_Calendar.Data\BH_Calendar.Data.csproj", "{155EEB3E-13F9-4DEE-A80A-85853FA89813}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{291C510D-3AF6-4FFB-9FC4-80FD124219CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291C510D-3AF6-4FFB-9FC4-80FD124219CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291C510D-3AF6-4FFB-9FC4-80FD124219CB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{291C510D-3AF6-4FFB-9FC4-80FD124219CB}.Debug|x86.Build.0 = Debug|Any CPU
+		{291C510D-3AF6-4FFB-9FC4-80FD124219CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291C510D-3AF6-4FFB-9FC4-80FD124219CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291C510D-3AF6-4FFB-9FC4-80FD124219CB}.Release|x86.ActiveCfg = Release|Any CPU
+		{291C510D-3AF6-4FFB-9FC4-80FD124219CB}.Release|x86.Build.0 = Release|Any CPU
+		{155EEB3E-13F9-4DEE-A80A-85853FA89813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155EEB3E-13F9-4DEE-A80A-85853FA89813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155EEB3E-13F9-4DEE-A80A-85853FA89813}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{155EEB3E-13F9-4DEE-A80A-85853FA89813}.Debug|x86.Build.0 = Debug|Any CPU
+		{155EEB3E-13F9-4DEE-A80A-85853FA89813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155EEB3E-13F9-4DEE-A80A-85853FA89813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155EEB3E-13F9-4DEE-A80A-85853FA89813}.Release|x86.ActiveCfg = Release|Any CPU
+		{155EEB3E-13F9-4DEE-A80A-85853FA89813}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{291C510D-3AF6-4FFB-9FC4-80FD124219CB} = {BCA4015D-6D2D-4E9C-B473-1C5211523957}
+		{155EEB3E-13F9-4DEE-A80A-85853FA89813} = {BEABC482-B816-4A12-B2AB-FB68A0DE3102}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00D7CBB7-CC85-44C1-81E1-975F009BB9C9}
+	EndGlobalSection
+EndGlobal

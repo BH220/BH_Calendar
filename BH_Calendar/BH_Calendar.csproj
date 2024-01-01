@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{291C510D-3AF6-4FFB-9FC4-80FD124219CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BH_Calendar</RootNamespace>
+    <AssemblyName>BH_Calendar</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BH_Core">
+      <HintPath>..\..\BH_Core\BH_Core\bin\Release\BH_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BH_DbConnect">
+      <HintPath>..\..\BH_DbConnect\BH_DbConnect\bin\Release\BH_DbConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="BH_Library">
+      <HintPath>..\..\BH_Library\BH_Library\bin\Release\BH_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Event\BhEventViwer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Event\BhEventViwer.Designer.cs">
+      <DependentUpon>BhEventViwer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event\ctlSelectGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Event\ctlSelectGroup.Designer.cs">
+      <DependentUpon>ctlSelectGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event\frmEventInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event\frmEventInfo.Designer.cs">
+      <DependentUpon>frmEventInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event\Group\ctlEventGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Event\Group\ctlEventGroup.Designer.cs">
+      <DependentUpon>ctlEventGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event\Group\frmGroupInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event\Group\frmGroupInfo.Designer.cs">
+      <DependentUpon>frmGroupInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginInfo.cs" />
+    <Compile Include="Login\SqlManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RootForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RootForm.Designer.cs">
+      <DependentUpon>RootForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Event\BhEventViwer.resx">
+      <DependentUpon>BhEventViwer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event\ctlSelectGroup.resx">
+      <DependentUpon>ctlSelectGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event\frmEventInfo.resx">
+      <DependentUpon>frmEventInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event\Group\ctlEventGroup.resx">
+      <DependentUpon>ctlEventGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event\Group\frmGroupInfo.resx">
+      <DependentUpon>frmGroupInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AssignTo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cert_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataPanel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteComment_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrawingPin2_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditComment_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditName_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertComment_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\managedatasource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post-it.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post-it-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post-it-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post-it-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PreviousComment_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Properties_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PublicFix_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Show_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowHideComment_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserGroup_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\검색.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\닫기_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\저장_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colormixer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteRow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calander.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainIcon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BH_Calendar.Data\BH_Calendar.Data.csproj">
+      <Project>{155eeb3e-13f9-4dee-a80a-85853fa89813}</Project>
+      <Name>BH_Calendar.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
